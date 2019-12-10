@@ -1,18 +1,18 @@
 <template>
   <div id="app">
     <div id="login">
-      <p v-if="user">Welcome {{user.username}}<br><a href="#" @click="logout">Logout</a></p>
-      <p v-else><a href="#" @click="toggleForm">Register or Login</a></p>
+      <p v-if="user">Welcome {{user.username}}<br><a href="#" @click="logout" class="button">Logout</a></p>
+      <p v-else><a href="#" @click="toggleForm" class="button">Register or Login</a></p>
     </div>
     <div class="header">
       <h1>Example Class</h1>
       <div id="nav">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/student">Student</router-link> |
-        <router-link to="/ta">Ta</router-link> |
-        <router-link to="/admin">Admin</router-link> |
-        <router-link to="/about">About</router-link> |
-        <a href="https://github.com/rm13082016/finalCreativeProject">Github</a>
+        <router-link to="/" class="button">Home</router-link> |
+        <router-link to="/student" class="button">Student</router-link> |
+        <router-link to="/ta" class="button">Ta</router-link> |
+        <router-link to="/admin" class="button">Admin</router-link> |
+        <router-link to="/about" class="button">About</router-link> |
+        <a href="https://github.com/rm13082016/finalCreativeProject" class="button">Github</a>
       </div>
     </div>
     <transition v-if="showForm" name="modal">
@@ -67,7 +67,8 @@
   }
   .header {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     background: #002E5D;
     padding: 10px 100px;
     color: white;
@@ -79,13 +80,24 @@
   
   #nav a, #login a {
     font-weight: bold;
-    color: #fff;
+    color: #000;
     text-decoration: none;
   }
   
   #nav a.router-link-exact-active {
     color: #0062B8;
   }
+  
+  .button {
+  background-color: #EEEEEE;
+  margin: 4px 6px 30px 6px;
+  padding: 2px 6px 2px 6px;;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  border-radius: 6px;
+}
   .content {
     padding: 10px 100px;
   }
