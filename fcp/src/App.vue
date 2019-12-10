@@ -68,7 +68,7 @@
   .header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     background: #002E5D;
     padding: 10px 100px;
     color: white;
@@ -90,13 +90,14 @@
   
   .button {
   background-color: #EEEEEE;
-  margin: 4px 6px 30px 6px;
+  margin: 2px 4px 2px 0px;
   padding: 2px 6px 2px 6px;;
   border-top: 1px solid #CCCCCC;
   border-right: 1px solid #333333;
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
   border-radius: 6px;
+  display: inline-block;
 }
   .content {
     padding: 10px 100px;
