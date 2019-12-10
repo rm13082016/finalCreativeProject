@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <h1>Hints</h1>
-    <p>In order to access the admin and ta pages you must have the right clearance.</p>
+    <p>In order to access the Admin and Ta pages you must have the right clearance.</p>
     <p>You can use the following logins</p>
     <ul>
       <li>Username: Admin</li>
@@ -15,3 +15,9 @@
     Admin have the same access as students and Ta's plus they can add Ta's and Admin, create and delete problems. </p>
   </div>
 </template>
+
+<style>
+  .about {
+    text-align: left;
+  }
+</style>

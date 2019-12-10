@@ -1,5 +1,5 @@
 <template>
-  <div v-if="level > 0">
+  <div v-if="level > 0" class="ta">
     <h1>Solutions</h1>
     <div v-for="problem in problems" v-bind:key="problem._id">
       <hr>
@@ -16,6 +16,12 @@
   </div>
   <p v-else>You are not authorized to view this page</p>
 </template>
+
+<style>
+  .ta {
+    text-align: left;
+  }
+</style>
 
 <script>
 import axios from "axios";

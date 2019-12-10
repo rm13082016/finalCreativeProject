@@ -5,7 +5,7 @@
       <p v-else><a href="#" @click="toggleForm">Register or Login</a></p>
     </div>
     <div class="header">
-      <h1>Engineering Mechanics: Statics</h1>
+      <h1>Example Class</h1>
       <div id="nav">
         <router-link to="/">Home</router-link> |
         <router-link to="/student">Student</router-link> |
@@ -61,14 +61,14 @@
   #login {
     display: flex;
     justify-content: flex-end;
-    background: #571845;
+    background: #002E5D;
     padding: 10px 100px;
     color: white;
   }
   .header {
     display: flex;
     justify-content: space-between;
-    background: #571845;
+    background: #002E5D;
     padding: 10px 100px;
     color: white;
   }
@@ -84,7 +84,7 @@
   }
   
   #nav a.router-link-exact-active {
-    color: #FFC300;
+    color: #0062B8;
   }
   .content {
     padding: 10px 100px;

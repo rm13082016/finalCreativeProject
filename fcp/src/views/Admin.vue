@@ -1,7 +1,6 @@
 <template>
-  <div v-if="level > 1">
-    <h1>Add a TA or Admin</h1>
-    <a href="#" @click="toggleLoginForm">Add</a>
+  <div v-if="level > 1" class="admin">
+    <a href="#" @click="toggleLoginForm" class="button">Add a TA or Admin</a>
     <transition v-if="showForm" name="modal">
       <div class="modal-mask">
         <div class="modal-wrapper">
@@ -75,6 +74,23 @@ button {
   margin-top: 20px;
   font-size: 1.2em;
 }
+
+.button {
+  font: bold 1.5em Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #000000;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+.admin {
+    text-align: left;
+  }
+
 </style>
 
 <script>

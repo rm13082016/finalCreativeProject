@@ -1,5 +1,5 @@
 <template>
-  <div v-if="user">
+  <div v-if="user" class="student">
     <h1>Practice Problems</h1>
     <div v-for="(problem, index) in problems" v-bind:key="problem._id">
       <hr>
@@ -17,6 +17,12 @@
   </div>
   <p v-else>You must be logged in to view practice problems</p>
 </template>
+
+<style>
+  .student {
+    text-align: left;
+  }
+</style>
 
 <script>
 import axios from "axios";

@@ -6,3 +6,9 @@
   </div>
 </template>
 
+<style>
+  .home {
+    text-align: center;
+  }
+</style>
+
